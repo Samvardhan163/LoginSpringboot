@@ -9,6 +9,7 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.setAllowComparingPrivateFields;
 
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
@@ -33,5 +34,14 @@ public class UserRepositoryTest {
         User existUser=entityManager.find(User.class,savedUser.getId());
 
         assertThat(existUser.getEmail()).isEqualTo(user.getEmail());
+    }
+
+    @Test
+    void findUserByEmail() {
+        String email="sam@gmail.com";
+
+        User user=userRepository.findByEmail("sam@gmail.com");
+
+       assertThat(user).isNotNull();
     }
 }
