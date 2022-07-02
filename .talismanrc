@@ -1,0 +1,16 @@
+fileignoreconfig:
+- filename: build/resources/main/templates/index.html
+  checksum: b43073c0a923e6976609903f1060226e6e20db35c6380bdb9d35d19c8426fd10
+- filename: src/main/resources/templates/signup_form.html
+  checksum: 4c8fc99b84771639895a669d137cb2ee54b8038afcd493f66faa9fa8e5e20b7d
+- filename: build/resources/main/templates/signup_form.html
+  checksum: 41d209bca703c4682c7b9f63b5199ab0c47fe46961695ede3157707493508c22
+- filename: src/main/resources/templates/index.html
+  checksum: 39a10cb700e00fd87b2c40f19278fece939810d752593425e83bf64092cbde41
+- filename: src/main/java/com/tw/login/entity/User.java
+  checksum: 8d50f5c21272ffb658888c638851da72ba87a71d7569d3d3508ba08aa0b2c6ab
+- filename: build/test-results/test/TEST-com.tw.login.repository.UserRepositoryTest.xml
+  checksum: 0da5764aabbd51ba050541e725055c800995a9d1245941f83e52068646b7a7cb
+- filename: build/reports/tests/test/classes/com.tw.login.repository.UserRepositoryTest.html
+  checksum: bb8daa364d73facd9b68d4b5638bfd51de6fc301083c727c4461642ed404c497
+version: ""
